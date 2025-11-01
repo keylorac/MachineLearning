@@ -55,11 +55,11 @@ LR = 1e-4
 EPOCHS = 10
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-# dominio físico en AU (de tus regeneradas)
+# dominio físico en AU
 L_AU = 1600.0  # usamos [-L_AU, +L_AU] para X e Y si las imágenes están centradas así
 
 # -------------------------
-# U-Net (tu versión, idéntica a train_unet.py)
+# U-Net
 # -------------------------
 class ConvBlock(nn.Module):
     def __init__(self, in_ch, out_ch):
